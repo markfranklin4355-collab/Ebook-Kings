@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ebook Kings — Publish, Sell, and Scale Your eBooks</title>
+  <meta name="description" content="Ebook Kings helps authors publish, distribute, and sell eBooks with powerful tools and simple workflows.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1115; --card:#161a22; --text:#e8ecf1; --muted:#9aa9b7; --brand:#6aa7ff; --accent:#ffd36a;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; background:var(--bg); color:var(--text); font-family:Inter,system-ui,Segoe UI,Arial,sans-serif}
+    a{color:var(--brand); text-decoration:none}
+    img{max-width:100%; height:auto; border-radius:12px}
+    .container{max-width:var(--max); margin:0 auto; padding:0 20px}
+    .nav{position:sticky; top:0; backdrop-filter:saturate(180%) blur(8px); background:rgba(15,17,21,.75); border-bottom:1px solid #222; z-index:100}
+    .nav-inner{display:flex; align-items:center; justify-content:space-between; padding:16px 0}
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{width:36px; height:36px; border-radius:8px; background:linear-gradient(135deg,var(--brand),var(--accent)); display:flex; align-items:center; justify-content:center; font-weight:700; color:#111}
+    .brand h1{font-size:18px; margin:0}
+    .nav a{margin-left:18px; color:var(--muted)}
+    .btn{display:inline-flex; align-items:center; gap:8px; padding:12px 16px; border-radius:10px; font-weight:600; background:var(--brand); color:#0b1322; border:1px solid rgba(255,255,255,.08)}
+    .btn.secondary{background:transparent; color:var(--text); border:1px solid #2a3340}
+    .hero{padding:72px 0 36px; text-align:center}
+    .hero h2{font-size:38px; line-height:1.15; margin:0 0 12px}
+    .hero p{max-width:760px; margin:0 auto 22px; color:var(--muted)}
+    .hero-actions{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:12px}
+    .hero-media{margin-top:28px}
+    .section{padding:56px 0}
+    .section h3{font-size:26px; margin:0 0 12px}
+    .section p.lead{color:var(--muted); margin:0 0 24px}
+    .grid{display:grid; gap:18px}
+    .card{background:var(--card); border:1px solid #222934; border-radius:14px; padding:18px}
+    .card h4{margin:0 0 8px; font-size:18px}
+    .features{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .catalog{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .catalog .cover{height:160px; background:#11161f; border:1px dashed #2a3340; border-radius:12px; display:flex; align-items:center; justify-content:center; color:var(--muted)}
+    .pricing{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .price{font-size:32px; font-weight:700}
+    .badge{display:inline-block; padding:6px 10px; border-radius:999px; background:#1c2330; color:var(--brand); font-weight:600; font-size:12px; border:1px solid #2a3340}
+    .list{display:grid; gap:8px; margin:12px 0 0; color:var(--muted)}
+    .list li{list-style:none; display:flex; gap:10px}
+    .divider{height:1px; background:#222934; margin:24px 0}
+    .cta{padding:48px 0; text-align:center}
+    .footer{padding:34px 0; color:var(--muted); font-size:14px; border-top:1px solid #222934}
+    /* Responsive tweaks */
+    @media (max-width:640px){
+      .hero h2{font-size:30px}
+      .nav a{margin-left:12px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="logo">EK</div>
+        <h1>Ebook Kings</h1>
+      </div>
+      <div class="links">
+        <a href="#features">Features</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn secondary">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <span class="badge">Publish. Distribute. Grow.</span>
+      <h2>Launch your eBook to the world with Ebook Kings</h2>
+      <p>From manuscript to marketplace—Ebook Kings gives authors a seamless way to publish, distribute, and sell across global platforms with analytics, DRM options, and beautiful landing pages.</p>
+      <div class="hero-actions">
+        <a href="#pricing" class="btn">Get started</a>
+        <a href="#features" class="btn secondary">See features</a>
+      </div>
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0ea?q=80&w=1200&auto=format&fit=crop" alt="Ebook preview on tablet">
+      </div>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <div class="container">
+      <h3>Why authors choose Ebook Kings</h3>
+      <p class="lead">Everything you need to publish and scale your eBooks—no technical overhead, just clean tools and clear results.</p>
+      <div class="grid features">
+        <div class="card">
+          <h4>One‑click publishing</h4>
+          <p>Upload EPUB/PDF, add metadata, and publish to your storefront and partners in minutes.</p>
+          <ul class="list">
+            <li>• EPUB/PDF support</li>
+            <li>• ISBN & metadata</li>
+            <li>• Automated cover generator</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Global distribution</h4>
+          <p>Reach readers on Kindle, Apple Books, Kobo, and more with unified reporting.</p>
+          <ul class="list">
+            <li>• Partner integrations</li>
+            <li>• Territory pricing</li>
+            <li>• Sales dashboards</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Secure sales</h4>
+          <p>Protect your work with optional watermarking and DRM, while keeping buyer UX smooth.</p>
+          <ul class="list">
+            <li>• Stripe & PayPal</li>
+            <li>• DRM & watermark</li>
+            <li>• License keys</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Author analytics</h4>
+          <p>Track reads, downloads, and conversions—know what’s working and scale it.</p>
+          <ul class="list">
+            <li>• Real‑time stats</li>
+            <li>• Campaign tracking</li>
+            <li>• Export to CSV</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog -->
+  <section id="catalog" class="section">
+    <div class="container">
+      <h3>Featured titles</h3>
+      <p class="lead">Showcase your latest releases. Replace these cards with your own books and links.</p>
+      <div class="grid catalog">
+        <div class="card">
+          <div class="cover">Cover image</div>
+          <h4>The Trading Mind</h4>
+          <p class="muted">By M. Khan • Strategy • EPUB/PDF</p>
+          <div class="hero-actions">
+            <a href="#" class="btn">Preview</a>
+            <a href="#" class="btn secondary">Buy — $9.99</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cover">Cover image</div>
+          <h4>Golden Setups</h4>
+          <p class="muted">By A. Siddiqui • Finance • EPUB</p>
+          <div class="hero-actions">
+            <a href="#" class="btn">Preview</a>
+            <a href="#" class="btn secondary">Buy — $12.99</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cover">Cover image</div>
+          <h4>Mastering ICT</h4>
+          <p class="muted">By Ebook Kings • Education • PDF</p>
+          <div class="hero-actions">
+            <a href="#" class="btn">Preview</a>
+            <a href="#" class="btn secondary">Buy — $7.99</a>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <p class="lead">Need a custom storefront? Contact us for a branded, high‑conversion landing page.</p>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <h3>Simple pricing</h3>
+      <p class="lead">Start free. Upgrade when you’re ready to scale your catalog and analytics.</p>
+      <div class="grid pricing">
+        <div class="card">
+          <h4>Starter</h4>
+          <p class="price">$0</p>
+          <ul class="list">
+            <li>• 3 eBooks</li>
+            <li>• Basic analytics</li>
+            <li>• Direct sales (Stripe)</li>
+          </ul>
+          <div class="hero-actions"><a href="#" class="btn">Choose Starter</a></div>
+        </div>
+        <div class="card">
+          <h4>Pro</h4>
+          <p class="price">$19/mo</p>
+          <ul class="list">
+            <li>• Unlimited eBooks</li>
+            <li>• Global distribution</li>
+            <li>• Advanced analytics</li>
+          </ul>
+          <div class="hero-actions"><a href="#" class="btn">Choose Pro</a></div>
+        </div>
+        <div class="card">
+          <h4>Publisher</h4>
+          <p class="price">$49/mo</p>
+          <ul class="list">
+            <li>• Teams & roles</li>
+            <li>• DRM options</li>
+            <li>• Priority support</li>
+          </ul>
+          <div class="hero-actions"><a href="#" class="btn">Choose Publisher</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <h3>Authors love Ebook Kings</h3>
+      <div class="grid features">
+        <div class="card">
+          <p>“Ebook Kings turned my draft into a polished release and I started selling within a week.”</p>
+          <p class="muted">— Sara A., Non‑fiction author</p>
+        </div>
+        <div class="card">
+          <p>“Clean analytics and smooth payments—exactly what I needed to grow my catalog.”</p>
+          <p class="muted">— Omar R., Indie publisher</p>
+        </div>
+        <div class="card">
+          <p>“The storefront looked premium without any coding. My conversions doubled.”</p>
+          <p class="muted">— Naila M., Tech writer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <h3>Frequently asked questions</h3>
+      <div class="grid features">
+        <div class="card">
+          <h4>How do I publish?</h4>
+          <p>Upload your file, add cover and metadata, set pricing, and click publish. We handle the rest.</p>
+        </div>
+        <div class="card">
+          <h4>Which formats?</h4>
+          <p>EPUB and PDF are supported by default. Contact us for MOBI conversions.</p>
+        </div>
+        <div class="card">
+          <h4>Do you take a cut?</h4>
+          <p>Direct sales are your revenue minus payment gateway fees. Distribution fees vary by partner.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Newsletter -->
+  <section id="contact" class="cta">
+    <div class="container">
+      <h3>Ready to publish with Ebook Kings?</h3>
+      <p class="lead">Send us your manuscript or ask for a demo. We’ll reply within 24 hours.</p>
+      <div class="hero-actions">
+        <a href="mailto:hello@ebookkings.example" class="btn">Email us</a>
+        <a href="#" class="btn secondary">Request a demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <p>© <span id="year"></span> Ebook Kings. All rights reserved.</p>
+        <p>Privacy • Terms • Support</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
